@@ -19,14 +19,14 @@ validations_labels_folder = os.path.join(base_path, 'validations/labels')
 ### Model paths for detection
 detection_models = [
     os.path.join(model_base_path, "yolo11n T.pt"), # YOLO11N
-    os.path.join(model_base_path, "yolo11m T.pt"), # YOLO11M
+    # os.path.join(model_base_path, "yolo11m T.pt"), # YOLO11M
     # os.path.join(model_base_path, "yolo11x T.pt"), # YOLO11X
 ]
 
 ### Model paths for segmentation
 segmentation_models = [
     os.path.join(model_base_path, "yolo11n-seg T.pt"), # YOLO11N-SEG
-    os.path.join(model_base_path, "yolo11m-seg T.pt"), # YOLO11M-SEG
+    # os.path.join(model_base_path, "yolo11m-seg T.pt"), # YOLO11M-SEG
     # os.path.join(model_base_path, "yolo11x-seg T.pt"), # YOLO11X-SEG
     # os.path.join(model_base_path, "yolo11x2-seg T.pt"), # YOLO11X2-SEG
 ]
