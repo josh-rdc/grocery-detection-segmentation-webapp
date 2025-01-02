@@ -1,0 +1,13 @@
+Parameter,Value,Definition
+epochs,100,"Total number of training epochs, each represents a full pass over the entire dataset.
+Affects training duration and model performance"
+time,none,"Max training time in hours. 
+Automatically stop after the specified duration"
+patience,10,"Number of epochs to wait without improvement in validation metrics before early stopping the training. 
+Helps prevent overfitting by stopping training when performance plateaus."
+batch size,-1,Number of training examples utilized in one iteration of model training.
+imgsz,640**,"Target image size for training. 
+Affects model accuracy and computational complexity."
+optimizer,auto,Choice of optimizer for training.
+augmentation strategy*,random,"Introducing variability into the training data.
+Helps the model generalize better to unseen data"

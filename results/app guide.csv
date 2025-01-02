@@ -1,0 +1,7 @@
+Configuration,Options
+Task,"Detection, Segmentation"
+Model,"yolo version 11x"
+Source,"image, video, webcam"
+Class,as detailed in dataset
+Confidence Threshold,0.00 - 1.00 (by 0.05)
+IoU Threshold,0.00 - 1.00 (by 0.05)

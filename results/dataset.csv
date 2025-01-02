@@ -1,0 +1,25 @@
+class number,class,total images R0,train images,val images,total images,total instances R0,train instances,val instances,total instances,specific brand and variation,unit of measurement per instance
+1,bottled soda,385,477,58,535,412,682,71,753,Coca-cola (Coke Zero),"1.9L bottle, 320mL bottle"
+2,cheese,350,310,40,350,454,633,75,708,Eden (Classic),"165g box, 45g pack"
+3,chocolate,350,459,59,518,421,947,118,1065,Kitkat (Chocolate),36.5g pack
+4,coffee,350,404,41,445,606,1078,137,1215,Nescafe Original (Classic),"52g twin pack, 28g pack"
+5,condensed milk,350,370,46,416,505,639,80,719,Alaska (Classic),208g can
+6,cooking oil,350,467,55,522,350,531,60,591,Simply Canola Oil,1L bottle
+7,corned beef,350,442,58,500,1809,1997,294,2291,"Purefoods (Classic, Spicy)","150g, 210g, 380g can"
+8,garlic,350,317,33,350,350,712,66,778,None,whole
+9,instant noodles,350,431,42,473,350,583,58,641,Lucky Me! (Sweet and Spicy),80g pack
+10,ketchup,350,477,47,524,350,633,63,696,UFC (Banana),530g
+11,lemon,350,324,38,362,630,642,51,693,None,whole
+12,all-purpose cream,350,451,49,500,581,948,107,1055,Nestle (Classic),250g box
+13,mayonnaise,350,319,31,350,1050,991,108,1099,Lady's Choice (Classic),700mL bottle
+14,peanut butter,350,485,35,520,974,1115,95,1210,"Lady's Choice, Skippy","170g, 340g bottle"
+15,pasta,350,443,57,500,359,481,62,543,Royal Linguine,1kg pack
+16,pineapple juice,350,449,50,499,1281,1506,149,1655,"Del Monte (Fiber, ACE)",240mL can
+17,crackers,350,462,47,509,547,769,74,843,"Skyflakes, Rebisco","22g, 33g pack"
+18,sardines canned,350,305,45,350,441,606,90,696,555 (Tomato),155g can
+19,pink shampoo,350,444,56,500,515,755,88,843,Sunsilk (Smooth and Manageable),180mL bottle
+20,soap,350,446,54,500,350,471,57,528,Dove (Lavender),106g box
+21,soy sauce,364,452,48,500,1093,1177,115,1292,Silverswan,385mL bottle
+22,toothpaste,350,456,44,500,806,895,60,955,Colgate (Advanced White),160g box
+23,canned tuna,350,461,61,522,1174,1504,233,1737,"Century Tuna (Original, Hot and Spicy)","155g, 180g can"
+24,alcohol,350,426,34,460,355,473,38,511,Green Cross (Ethyl),500ml bottle
