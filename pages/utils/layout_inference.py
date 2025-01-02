@@ -201,8 +201,8 @@ def detection_and_segmentation_app():
             handle_video_inference(st, model, conf, iou, selected_ind, button_text, fps_display)
             # handle_video_inference_remote(st, selected_model_name, conf, iou, button_text, fps_display)
         elif source == "webcam":
-            # handle_webcam_inference(st, model, conf, iou, selected_ind, fps_display)
-            handle_webcam_inference_remote(st, selected_model_name, conf, iou, fps_display)
+            handle_webcam_inference(st, model, conf, iou, selected_ind, fps_display)
+            # handle_webcam_inference_remote(st, selected_model_name, conf, iou, fps_display)
 
 
         # Clear CUDA memory

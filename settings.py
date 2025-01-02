@@ -12,8 +12,8 @@ fastapi_path = os.path.join(assets_folder, 'fastapi-websockets.png')
 model_base_path = os.path.join(base_path, 'trained models')
 
 ## Validations Folder
-validations_image_folder = os.path.join(base_path, 'validations\images')
-validations_labels_folder = os.path.join(base_path, 'validations\labels')
+validations_image_folder = os.path.join(base_path, 'validations/images')
+validations_labels_folder = os.path.join(base_path, 'validations/labels')
 
 ### Revision 0 Models
 ### Model paths for detection
