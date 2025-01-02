@@ -163,7 +163,7 @@ def detection_and_segmentation_app():
         # Check if GPU is available and set device
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         model.to(device)
-        print(f"Device: {device}")
+        # print(f"Device: {device}")
 
         # Add video source selection dropdown
         source = st.sidebar.selectbox(
