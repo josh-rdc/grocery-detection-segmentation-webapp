@@ -203,12 +203,12 @@ def detection_and_segmentation_app():
             # handle_video_inference_remote(st, selected_model_name, conf, iou, button_text, fps_display)
         elif source == "webcam":
             st.sidebar.info("Press 'Start' to start the webcam feed.")
-            webcam_source = float(st.sidebar.slider("Webcam Source", ['local', 'rtc']))
+            webcam_source = st.sidebar.selectbox("Webcam Source", ('local', 'rtc'))
             if webcam_source == 'local':
                 handle_webcam_inference(st, model, conf, iou, selected_ind, fps_display)
             elif webcam_source == 'rtc':
                 handle_webcam_inference_rtc(st, model, conf, iou, selected_ind, fps_display)
-                
+
             # handle_webcam_inference_remote(st, selected_model_name, conf, iou, fps_display)
 
 

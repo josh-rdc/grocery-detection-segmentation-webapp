@@ -167,8 +167,7 @@ class VideoProcessor(VideoTransformerBase):
         return annotated_frame
     
 def handle_webcam_inference_rtc(st, model, conf, iou, selected_ind, fps_display):
-    st.sidebar.info("Press 'Start' to start the webcam feed.")
-
+    
     # Configure ICE servers
     rtc_config = RTCConfiguration({
     "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
@@ -183,8 +182,7 @@ def handle_webcam_inference_rtc(st, model, conf, iou, selected_ind, fps_display)
     )
 
 def handle_webcam_inference(st, model, conf, iou, selected_ind, fps_display):
-    st.sidebar.info("Press 'Start' to start the webcam feed.")
-
+    
     if st.sidebar.button("Start"):
         
         videocapture = cv2.VideoCapture(0)
