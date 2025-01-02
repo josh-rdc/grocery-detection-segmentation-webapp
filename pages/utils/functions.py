@@ -166,7 +166,7 @@ class VideoProcessor(VideoTransformerBase):
         )
         return annotated_frame
     
-def handle_webcam_inference(st, model, conf, iou, selected_ind, fps_display):
+def handle_webcam_inference_rtc(st, model, conf, iou, selected_ind, fps_display):
     st.sidebar.info("Press 'Start' to start the webcam feed.")
 
     # Configure ICE servers
@@ -182,38 +182,38 @@ def handle_webcam_inference(st, model, conf, iou, selected_ind, fps_display):
         rtc_configuration=rtc_config,
     )
 
-# def handle_webcam_inference(st, model, conf, iou, selected_ind, fps_display):
-#     st.sidebar.info("Press 'Start' to start the webcam feed.")
+def handle_webcam_inference(st, model, conf, iou, selected_ind, fps_display):
+    st.sidebar.info("Press 'Start' to start the webcam feed.")
 
-#     if st.sidebar.button("Start"):
+    if st.sidebar.button("Start"):
         
-#         videocapture = cv2.VideoCapture(0)
+        videocapture = cv2.VideoCapture(0)
 
-#         if not videocapture.isOpened():
-#             st.error("Could not open webcam.")
-#         stop_button = st.button("Stop")
+        if not videocapture.isOpened():
+            st.error("Could not open webcam.")
+        stop_button = st.button("Stop")
 
-#         col1, col2, col3 = st.columns([1, 3, 1])  
-#         ann_frame = col2.empty()
+        col1, col2, col3 = st.columns([1, 3, 1])  
+        ann_frame = col2.empty()
 
-#         while videocapture.isOpened():
-#             success, frame = videocapture.read()
-#             if not success:
-#                 st.warning("Failed to read frame from webcam.")
-#                 break
+        while videocapture.isOpened():
+            success, frame = videocapture.read()
+            if not success:
+                st.warning("Failed to read frame from webcam.")
+                break
 
-#             prev_time = time.time()
+            prev_time = time.time()
   
-#             results = model(frame, conf=conf, iou=iou, classes=selected_ind)
-#             annotated_frame = results[0].plot()
+            results = model(frame, conf=conf, iou=iou, classes=selected_ind)
+            annotated_frame = results[0].plot()
             
-#             curr_time = time.time()
-#             fps = 1 / (curr_time - prev_time)
+            curr_time = time.time()
+            fps = 1 / (curr_time - prev_time)
 
-#             ann_frame.image(annotated_frame, channels="BGR")
-#             fps_display.metric("FPS", f"{fps:.2f}")
-#             if stop_button:
-#                 break
+            ann_frame.image(annotated_frame, channels="BGR")
+            fps_display.metric("FPS", f"{fps:.2f}")
+            if stop_button:
+                break
 
-#         videocapture.release()
-#         cv2.destroyAllWindows()
+        videocapture.release()
+        cv2.destroyAllWindows()

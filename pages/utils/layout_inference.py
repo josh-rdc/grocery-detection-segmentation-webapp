@@ -15,6 +15,7 @@ from ultralytics import YOLO
 from pages.utils.functions import handle_image_inference
 from pages.utils.functions import handle_video_inference
 from pages.utils.functions import handle_webcam_inference
+from pages.utils.functions import handle_webcam_inference_rtc
 
 # from pages.utils.functions_client import handle_image_inference_remote
 # from pages.utils.functions_client import handle_video_inference_remote
@@ -201,7 +202,13 @@ def detection_and_segmentation_app():
             handle_video_inference(st, model, conf, iou, selected_ind, button_text, fps_display)
             # handle_video_inference_remote(st, selected_model_name, conf, iou, button_text, fps_display)
         elif source == "webcam":
-            handle_webcam_inference(st, model, conf, iou, selected_ind, fps_display)
+            st.sidebar.info("Press 'Start' to start the webcam feed.")
+            webcam_source = float(st.sidebar.slider("Webcam Source", ['local', 'rtc']))
+            if webcam_source == 'local':
+                handle_webcam_inference(st, model, conf, iou, selected_ind, fps_display)
+            elif webcam_source == 'rtc':
+                handle_webcam_inference_rtc(st, model, conf, iou, selected_ind, fps_display)
+                
             # handle_webcam_inference_remote(st, selected_model_name, conf, iou, fps_display)
 
 
