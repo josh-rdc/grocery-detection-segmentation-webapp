@@ -61,8 +61,9 @@ def main():
         st.markdown('''
                     Note: 
                     - ALL Models are evaluated on the validation set using :red-background[minimum confidence and Iou threshold of 0.60].
-                    - ↑ means higher values are better, ↓ means lower values are better
-                    - *(b)* corresponds to box (detection) metrics while *(m)* corresponds to mask (segmentation) metrics
+                    - ↑ means higher values are better, ↓ means lower values are better.
+                    - *(b)* corresponds to box (detection) metrics while *(m)* corresponds to mask (segmentation) metrics.
+                    - *F* denotes freezed backbone, *NF* denotes non-freezed backbone.
                     - For reference, 
                     [pytorch MaskRCNN ResNet50 FPN V2 pre-trained model](https://pytorch.org/vision/main/models/generated/torchvision.models.detection.maskrcnn_resnet50_fpn_v2.html#torchvision.models.detection.MaskRCNN_ResNet50_FPN_V2_Weights) 
                     has 46.4M parameters. 
