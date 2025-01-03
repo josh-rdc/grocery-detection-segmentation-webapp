@@ -58,8 +58,8 @@ def detection_and_segmentation_app():
     
     # Define the model options based on the task
     if selected_task == "App Guide":
-        st.sidebar.markdown("*Due to deployment constraints, only the YOLON model series is currently available.*")
-        
+        st.sidebar.markdown("*This application is currently hosted by the Streamlit cloud server, the shown inference implementation is not used for now.*")
+        st.sidebar.markdown("*Additionaly, due to deployment constraints, only the YOLON model series is available as of the moment.*")
         app_guide = st.container(border=True)
         with app_guide:
             col1, col2 = st.columns([1, 1.7])
