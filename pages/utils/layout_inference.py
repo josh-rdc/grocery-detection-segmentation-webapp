@@ -58,6 +58,8 @@ def detection_and_segmentation_app():
     
     # Define the model options based on the task
     if selected_task == "App Guide":
+        st.sidebar.markdown("*Due to deployment constraints, only the YOLON model series is currently available.*")
+        
         app_guide = st.container(border=True)
         with app_guide:
             col1, col2 = st.columns([1, 1.7])
@@ -148,7 +150,6 @@ def detection_and_segmentation_app():
         model_paths = settings.detection_models
         button_text = "Perform Detection"
 
-    st.sidebar.markdown("*Due to deployment constraints, only the YOLON model series is currently available.*")
 
     if selected_task != "App Guide":
         st.markdown(f":red-background[{button_text}] based on selected configuration.")
