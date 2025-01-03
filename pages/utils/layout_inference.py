@@ -205,6 +205,9 @@ def detection_and_segmentation_app():
             handle_video_inference(st, model, conf, iou, selected_ind, button_text, fps_display)
             # handle_video_inference_remote(st, selected_model_name, conf, iou, button_text, fps_display)
         elif source == "webcam":
+            st.markdown("Use *rtc* mode if you are using the hosted Streamlit app but this may not be very stable due to server limitations.")
+            st.markdown("Clone the app on your local machine and use *local* mode for better reliability.")
+            
             st.sidebar.info("Press 'Start' to start the webcam feed.")
             webcam_source = st.sidebar.selectbox("Webcam Source", ('local', 'rtc'))
             if webcam_source == 'local':
