@@ -40,7 +40,7 @@ def main():
         st.write(
             """
             <div style="font-size: 16px;">
-            # Requirement for the course AI 231 - Deep Learning Models<br>    
+            Machine Exercise for the course AI 231 - Deep Learning Models<br>    
             Master of Engineering in Artificial Intelligence<br>
             College of Engineering<br>
             University of the Philippines Diliman
