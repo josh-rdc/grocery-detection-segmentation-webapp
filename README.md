@@ -26,7 +26,7 @@ Sample results are shown below:
 
 </details>
 
-<details open>
+<details close>
 <summary>Detection and Segmentation via Video</summary>
 
 #### Detection
@@ -37,12 +37,15 @@ Sample results are shown below:
 
 </details>
 
-<details open>
+<details close>
 <summary>Segmentation via Live Video Stream</summary>
 
 #### Segmentation
-[![Live Demo 1](assets/Demo_Live1Thumbnail.png)](https://github.com/josh-rdc/grocery-detection-segmentation-webapp/blob/main/assets/Demo_Live1.mp4)
+https://github.com/josh-rdc/grocery-detection-segmentation-webapp/blob/main/assets/Demo_Live1.mp4
+<!-- [![Live Demo 1](assets/Demo_Live1Thumbnail.png)](https://github.com/josh-rdc/grocery-detection-segmentation-webapp/blob/main/assets/Demo_Live1.mp4) -->
+
 [![Live Demo 2](assets/Demo_Live2Thumbnail.png)](https://github.com/josh-rdc/grocery-detection-segmentation-webapp/blob/main/assets/Demo_Live2.mp4)
+
 
 </details>
 
