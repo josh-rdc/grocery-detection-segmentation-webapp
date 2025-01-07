@@ -42,7 +42,9 @@ https://github.com/user-attachments/assets/2cedfe91-ea0d-4fab-b610-192d612bc400
 <summary>Segmentation via Live Video Stream</summary>
 
 #### Segmentation
+
 https://github.com/user-attachments/assets/5d643db0-3a89-4c5f-890b-1a24ab020ade
+
 https://github.com/user-attachments/assets/f9134f57-3ba9-4183-b320-0ec204cbc206
 
 </details>
