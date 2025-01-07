@@ -16,7 +16,7 @@ The deployed version of this project can be accessed at [Grocery Items Detection
 
 Sample results are shown below:
 <details open>
-<summary>Detection and Segmentation via Image</summary>
+<summary>Sample Images</summary>
 
 #### Detection
 ![assets/Demo_ImageDetection.png](assets/Demo_ImageDetection.png)
@@ -27,7 +27,7 @@ Sample results are shown below:
 </details>
 
 <details close>
-<summary>Detection and Segmentation via Video</summary>
+<summary>Sample Videos</summary>
 
 #### Detection
 https://github.com/user-attachments/assets/832283af-ea58-44ef-b8da-a67ed4c0ee55
@@ -39,7 +39,7 @@ https://github.com/user-attachments/assets/2cedfe91-ea0d-4fab-b610-192d612bc400
 
 <details close>
    
-<summary>Segmentation via Live Video Stream</summary>
+<summary>Sample Live Video Stream</summary>
 
 #### Segmentation
 
