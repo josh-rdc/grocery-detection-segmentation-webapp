@@ -121,7 +121,8 @@ year = {2023}
 
 ## Contact
 
-If you find this work useful, give a star on this repo.
+If you find this work useful, kindly give a star ⭐ this repository. 
+
 For any inquiries, feel free to contact me through the following:
  <p>
 <a href="mailto:delacruz.joshua.reyes@gmail.com"><img src="https://img.shields.io/badge/Email-c14438?&logo=gmail&logoColor=white" alt="EmailId" height="20"/></a>
