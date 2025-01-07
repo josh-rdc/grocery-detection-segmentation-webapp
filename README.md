@@ -1,6 +1,6 @@
 # Image Segmentation Web App
 
-Web application deployed using [Streamlit](https://streamlit.io/) that performs object detection and segmentation on common grocery items.
+Web application that performs object detection and segmentation on common grocery items.
 
 ## Pages
 
@@ -15,7 +15,8 @@ Web application deployed using [Streamlit](https://streamlit.io/) that performs 
 The deployed version of this project can be accessed at [Grocery Items Detection and Segmentation App](https://grocery-detection-segmentation-webapp.streamlit.app/). 
 
 Sample images are shown below:
-![Segmentation on a sample image](readme_images/image.png)
+![assets/Sample%Demo%-%Image%Detection.png](assets/Sample%Demo%-%Image%Detection.png)
+![assets/Sample%Demo%-%Image%Segmentation.png](assets/Sample%Demo%-%Image%Segmentation.png)
 
 ## Dataset
 
@@ -76,6 +77,8 @@ Supported tasks include:
 
 For more details on model parameters and performance benchmarks (e.g., on the COCO dataset), visit the [Ultralytics YOLO11 Model Card](https://docs.ultralytics.com/models/yolo11).  
 
+### Model Training
+Models are trained on NVIDIA A100-SXM4-40GB GPU. Training time ranges from ~1 to 10 hours depending on the model variation and configuration.
 
 ## Installing Locally
 
