@@ -121,4 +121,10 @@ year = {2023}
 
 ## Contact
 
-If you find this work useful, please 
+If you find this work useful, give a star on this repo.
+For any inquiries, feel free to contact me through the following:
+ <p>
+<a href="mailto:delacruz.joshua.reyes@gmail.com"><img src="https://img.shields.io/badge/Email-c14438?&logo=gmail&logoColor=white" alt="EmailId" height="20"/></a>
+<a href="https://www.linkedin.com/in/joshreyesdelacruz/" target="blank"><img src="https://img.shields.io/badge/Linkedin-%230077B5.svg?logo=linkedin&logoColor=white" alt="LinkedinId" height="20" /></a>
+
+</p>
