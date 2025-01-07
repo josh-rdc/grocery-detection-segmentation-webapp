@@ -147,5 +147,5 @@ video_folder = "validations"
 videos = {
     "Detection Test": f"{video_folder}/detection_testR0.mp4",
     "Segmentation Test": f"{video_folder}/segmentation_testR0.mp4",
-    # "Live Test": f"{video_folder}/live_test.mp4",
+    "Live Test": f"{assets_folder}/Demo_Live1.mp4",
 }
