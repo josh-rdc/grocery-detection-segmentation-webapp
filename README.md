@@ -55,14 +55,27 @@ The dataset used to train the model comprises 24 classes of common grocery items
 
 For dataset access requests, please feel free to contact me.
 
-## Model
+## Model  
 
-The model used 
-The segmentation model uses the UNET architecture. The basic architecture of the UNET model is shown below:
-![UNET Architecture](readme_images/unet.png)
-The UNET model consists of an encoder and a decoder. The encoder is a series of convolutional layers that extract features from the input image. The decoder is a series of transposed convolutional layers that upsample the features to the original image size. Skip connections are used to connect the encoder and decoder layers. The skip connections concatenate the feature maps from the encoder to the corresponding feature maps in the decoder. This helps the decoder to recover the spatial information lost during the encoding process.
+The application utilizes **YOLO11** by Ultralytics, the latest iteration in the YOLO series of real-time object detectors. YOLOv11 redefines object detection with cutting-edge accuracy, speed, and efficiency.  
 
-The detailed architecture of the UNET model used in this project is shown below:
+### Model Variations  
+YOLOv11 offers multiple variations to suit a wide range of tasks:  
+- **Nano (n)**: Optimized for lightweight deployment.  
+- **Small (s)**: Balances speed and accuracy for real-time use.  
+- **Medium (m)**: Enhanced performance for more complex scenarios.  
+- **Large (l)**: High-accuracy models for demanding tasks.  
+- **Xtra-large (x)**: Maximum accuracy for advanced applications.  
+
+Supported tasks include:  
+- Object detection  
+- Segmentation  
+- Classification  
+- Pose estimation  
+- Oriented object detection  
+
+For more details on model parameters and performance benchmarks (e.g., on the COCO dataset), visit the [Ultralytics YOLO11 Model Card](https://docs.ultralytics.com/models/yolo11).  
+
 
 ## Installing Locally
 
@@ -91,3 +104,21 @@ To run this project locally, please follow these steps:
    ```
    streamlit run 🏠_Home.py
    ```
+
+## Reference
+
+```
+@software{Jocher_Ultralytics_YOLO_2023,
+author = {Jocher, Glenn and Qiu, Jing and Chaurasia, Ayush},
+license = {AGPL-3.0},
+month = jan,
+title = {{Ultralytics YOLO}},
+url = {https://github.com/ultralytics/ultralytics},
+version = {8.0.0},
+year = {2023}
+}
+```
+
+## Contact
+
+If you find this work useful, please 
