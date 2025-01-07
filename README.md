@@ -18,10 +18,10 @@ Sample results are shown below:
 <details open>
 <summary>Detection and Segmentation via Image</summary>
 
-### Detection
+#### Detection
 ![assets/Demo_ImageDetection.png](assets/Demo_ImageDetection.png)
 
-### Segmentation
+#### Segmentation
 ![assets/Demo_ImageSegmentation.png](assets/Demo_ImageSegmentation.png)
 
 </details>
@@ -29,12 +29,20 @@ Sample results are shown below:
 <details open>
 <summary>Detection and Segmentation via Video</summary>
 
-### Detection
-![validations/detection_test R0.mp4](validations/detection_test%R0.mp4)
+#### Detection
+![validations/detection_testR0.mp4](validations/detection_testR0.mp4)
 
-### Segmentation
-![validations/segmentation_test R0.mp4](validations/segmentation_test%R0.mp4)
+#### Segmentation
+![validations/segmentation_testR0.mp4](validations/segmentation_testR0.mp4)
 
+</details>
+
+<details open>
+<summary>Segmentation via Live Video Stream</summary>
+
+#### Segmentation
+![assets/Demo_Live1.mp4](assets/Demo_Live1.mp4)
+![assets/Demo_Live2.mp4](assets/Demo_Live2.mp4)
 </details>
 
 ## Dataset
