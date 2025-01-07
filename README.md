@@ -15,8 +15,8 @@ Web application that performs object detection and segmentation on common grocer
 The deployed version of this project can be accessed at [Grocery Items Detection and Segmentation App](https://grocery-detection-segmentation-webapp.streamlit.app/). 
 
 Sample images are shown below:
-![assets/Sample%Demo%-%Image%Detection.png](assets/Sample%Demo%-%Image%Detection.png)
-![assets/Sample%Demo%-%Image%Segmentation.png](assets/Sample%Demo%-%Image%Segmentation.png)
+![assets/Demo_ImageDetection.png](assets/Demo_ImageDetection.png)
+![assets/Demo_ImageSegmentation.png](assets/Demo_ImageSegmentation.png)
 
 ## Dataset
 
