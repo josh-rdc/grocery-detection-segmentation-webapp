@@ -20,9 +20,8 @@ def main():
     # Add name and LinkedIn link at the bottom
     st.sidebar.markdown("""
     By:              
-    Joshua R. Dela Cruz
-                        
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![LinkedIn](https://img.icons8.com/fluency/20/000000/linkedin.png)](https://www.linkedin.com/in/joshreyesdelacruz/)
+    Joshua R. Dela Cruz         
+    [![LinkedIn](https://img.icons8.com/fluency/20/000000/linkedin.png)](https://www.linkedin.com/in/joshreyesdelacruz/)
     [![Github](https://img.icons8.com/fluency/20/000000/github.png)](https://github.com/josh-rdc/DeepLearningModels_Machine_Exercises)
                         """)
 
