@@ -58,8 +58,7 @@ def detection_and_segmentation_app():
     
     # Define the model options based on the task
     if selected_task == "App Guide":
-        st.sidebar.markdown("*This application is currently hosted by the Streamlit cloud server, the shown inference implementation is not used.*")
-        st.sidebar.markdown("*Additionaly, due to deployment constraints, only the YOLON model series is available for now.*")
+        st.sidebar.markdown("*Due to deployment constraints, only the YOLO11n model series is currently available.*")
         app_guide = st.container(border=True)
         with app_guide:
             col1, col2 = st.columns([1, 1.7])
@@ -97,9 +96,11 @@ def detection_and_segmentation_app():
                             </div>
                             """, unsafe_allow_html=True)
         
-        app_detail = st.container(border=True)
+        # app_detail = st.container(border=True)
+        app_detail = st.expander("Inference Implementation")
         with app_detail:
-            st.subheader("Inference Implementation")
+            # st.subheader("Inference Implementation")
+            st.markdown("*This application is currently hosted by the Streamlit cloud server, the shown inference implementation is not used. Feel free to contact me to know how to implement the app through the presented implementation*")
             st.image(settings.fastapi_path, width=1000)
 
             st.markdown("""
@@ -114,7 +115,7 @@ def detection_and_segmentation_app():
         with sample_test:
             # List all images in the folder
             images = [os.path.join(settings.image_folder, img) for img in os.listdir(settings.image_folder) if img.endswith(('.png', '.jpg', '.jpeg'))]
-            image_expander = st.expander("Sample Tests")
+            image_expander = st.expander("Sample Tests", expanded=True)
             with image_expander:
                 # Display the images in a grid format
                 cols = st.columns(len(images))  # Create a column for each image
@@ -129,7 +130,7 @@ def detection_and_segmentation_app():
                         st.image(image, use_container_width=True)
 
             # Display the videos in the Streamlit app
-            video_expander = st.expander("Sample Videos")
+            video_expander = st.expander("Sample Videos", expanded=True)
             with video_expander:
                 for video_name, video_path in settings.videos.items():
                     st.markdown(video_name)
