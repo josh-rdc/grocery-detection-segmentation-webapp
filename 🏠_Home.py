@@ -19,8 +19,7 @@ def main():
     
     # Add name and LinkedIn link at the bottom
     st.sidebar.markdown("""
-    By: 
-                        
+    By:              
     Joshua R. Dela Cruz
                         
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![LinkedIn](https://img.icons8.com/fluency/20/000000/linkedin.png)](https://www.linkedin.com/in/joshreyesdelacruz/)
@@ -40,7 +39,7 @@ def main():
         st.write(
             """
             <div style="font-size: 16px;">
-            Machine Exercise for the course AI 231 - Deep Learning Models<br>    
+            Machine Exercise for the course AI 231 - ML Operations<br>    
             Master of Engineering in Artificial Intelligence<br>
             College of Engineering<br>
             University of the Philippines Diliman
