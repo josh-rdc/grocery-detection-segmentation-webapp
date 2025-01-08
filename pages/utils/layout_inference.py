@@ -100,7 +100,9 @@ def detection_and_segmentation_app():
         app_detail = st.expander("Inference Implementation")
         with app_detail:
             # st.subheader("Inference Implementation")
-            st.markdown("*This application is currently hosted by the Streamlit cloud server, the shown inference implementation is not used. Feel free to contact me to know how to implement the app through the presented implementation*")
+            st.markdown("*This application is currently hosted by the Streamlit cloud server, the shown inference implementation is not used.*")
+            st.markdown("*Feel free to contact me to know how to implement the app through the presented implementation.*")
+  
             st.image(settings.fastapi_path, width=1000)
 
             st.markdown("""
