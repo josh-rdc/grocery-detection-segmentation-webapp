@@ -119,7 +119,7 @@ def detection_and_segmentation_app():
         with sample_test:
             # List all images in the folder
             images = [os.path.join(settings.image_folder, img) for img in os.listdir(settings.image_folder) if img.endswith(('.png', '.jpg', '.jpeg'))]
-            image_expander = st.expander("Sample Tests", expanded=True)
+            image_expander = st.expander("Sample Images", expanded=False)
             with image_expander:
                 # Display the images in a grid format
                 cols = st.columns(len(images))  # Create a column for each image
@@ -134,7 +134,7 @@ def detection_and_segmentation_app():
                         st.image(image, use_container_width=True)
 
             # Display the videos in the Streamlit app
-            video_expander = st.expander("Sample Videos", expanded=True)
+            video_expander = st.expander("Sample Videos", expanded=False)
             with video_expander:
                 for video_name, video_path in settings.videos.items():
                     st.markdown(video_name)
