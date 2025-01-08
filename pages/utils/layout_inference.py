@@ -96,27 +96,28 @@ def detection_and_segmentation_app():
                             </div>
                             """, unsafe_allow_html=True)
         
-        # app_detail = st.container(border=True)
-        app_detail = st.expander("Inference Implementation")
-        with app_detail:
-            # st.subheader("Inference Implementation")
-            st.markdown("""
-                        *This application is currently hosted by the Streamlit cloud server, the shown inference implementation is not used.*
-                        *Feel free to contact me to know how to implement the app through the presented implementation.*
-                        """)
-  
-            st.image(settings.fastapi_path, width=1000)
-
-            st.markdown("""
-                - **HTTP** follow a request-response model, where the client sends a request to the server and waits for a response.
-                - :red-background[**WebSocket**] is a protocol that enables two-way communication between a client and a server over a single TCP connection. 
-                    * Implemented using the [FastAPI framework](https://unfoldai.com/fastapi-and-websockets/).
-                        
-                        """)
-            
         sample_test = st.container(border=True)
 
         with sample_test:
+            # st.subheader("Inference Implementation")
+            # app_detail = st.container(border=True)
+            app_detail = st.expander("Inference Implementation")
+            with app_detail:
+
+                st.markdown("""
+                            *This application is currently hosted by the Streamlit cloud server, the shown inference implementation is not used.*
+                            *Feel free to contact me to know how to implement the app through the presented implementation.*
+                            """)
+    
+                st.image(settings.fastapi_path, width=1000)
+
+                st.markdown("""
+                    - **HTTP** follow a request-response model, where the client sends a request to the server and waits for a response.
+                    - :red-background[**WebSocket**] is a protocol that enables two-way communication between a client and a server over a single TCP connection. 
+                        * Implemented using the [FastAPI framework](https://unfoldai.com/fastapi-and-websockets/).
+                            
+                            """)
+            
             # List all images in the folder
             images = [os.path.join(settings.image_folder, img) for img in os.listdir(settings.image_folder) if img.endswith(('.png', '.jpg', '.jpeg'))]
             image_expander = st.expander("Sample Images", expanded=False)
