@@ -2,7 +2,15 @@
 
 Web application that performs object detection and segmentation on common grocery items.
 
-## Pages
+## Table of Contents
+- [App Pages](#app-pages)
+- [Demo](#demo)
+- [Dataset](#dataset)
+- [Model](#model)
+- [Installing Locally](#installing-locally)
+- [References](#reference)
+
+## App Pages
 
 | Page         | Contents                                                                                                                                                           |
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
